@@ -47,7 +47,11 @@
             {name:'Docuserver', url:'52.43.32.181:3002',desc:'A lightweight document server.'},
             {name:'Qs', url:'52.43.32.181:3000',desc:'A system for knowledge maintainence'},
             ]
-        entries.forEach( (entryDict, index) => {
+        var entriesFormatted = []
+        entries.forEach((entryDict, index) => {
+            entriesFormatted.push({link:'<a href="'+entryDict.url+'">'+entryDict.name+'</a>',desc:entryDict.desc})
+        })
+        entriesFormatted.forEach( (entryDict, index) => {
             var row = table.insertRow();
             var rowContents = {}
             for (var key in entryDict) {
