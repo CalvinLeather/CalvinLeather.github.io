@@ -51,7 +51,7 @@
             var row = table.insertRow();
             var rowContents = {}
             for (var key in entryDict) {
-                rowContents[key] = insertCell()
+                rowContents[key] = row.insertCell()
                 rowContents[key].innerHTML = entryDict[key]
             }
         })
