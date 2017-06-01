@@ -33,7 +33,7 @@
             ]
         var entriesFormatted = []
         entries.forEach((entryDict, index) => {
-            entriesFormatted.push({link:'<a href="'+entryDict.url+'">'+entryDict.name+'</a>',desc:entryDict.desc})
+            entriesFormatted.push({link:'<a href="http://'+entryDict.url+'">'+entryDict.name+'</a>',desc:entryDict.desc})
         })
         entriesFormatted.forEach( (entryDict, index) => {
             var row = table.insertRow();
